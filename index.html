@@ -437,77 +437,77 @@
         </div>
 
         <!-- FORM GỬI EMAIL QUA WEB3FORMS -->
-        <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            class="secret-form"
+       ```html
+<form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    class="secret-form"
+>
+    <!-- ACCESS KEY -->
+    <input
+        type="hidden"
+        name="access_key"
+        value="76d6800d-4643-4cb5-8fd6-4f3c785ab025"
+    >
+
+    <!-- TIÊU ĐỀ EMAIL -->
+    <input
+        type="hidden"
+        name="subject"
+        value="💌 Lời nhắn mới từ Mai Phương's Secret Room"
+    >
+
+    <input
+        type="hidden"
+        name="from_name"
+        value="Mai Phuong Secret Room"
+    >
+
+    <!-- CHỐNG BOT -->
+    <input
+        type="checkbox"
+        name="botcheck"
+        class="hidden"
+        style="display:none"
+    >
+
+    <!-- TÊN NGƯỜI GỬI -->
+    <div class="form-group">
+        <label for="sender">
+            YOUR NAME / ANONYMOUS ♡
+        </label>
+
+        <input
+            type="text"
+            id="sender"
+            name="name"
+            placeholder="Tên hoặc biệt danh của bạn..."
+            maxlength="50"
         >
+    </div>
 
-            <!-- ACCESS KEY -->
-            <input
-                type="hidden"
-                name="access_key"
-                value="76d6800d-4643-4cb5-8fd6-4f3c785ab025"
-            >
+    <!-- NỘI DUNG -->
+    <div class="form-group">
+        <label for="message">
+            YOUR SECRET MESSAGE 💌
+        </label>
 
-            <!-- TIÊU ĐỀ EMAIL -->
-            <input
-                type="hidden"
-                name="subject"
-                value="💌 Lời nhắn mới từ Mai Phương's Secret Room"
-            >
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Viết những điều bạn muốn gửi..."
+            required
+            maxlength="2000"
+        ></textarea>
+    </div>
 
-            <!-- TÊN WEBSITE -->
-            <input
-                type="hidden"
-                name="from_name"
-                value="Mai Phuong Secret Room"
-            >
+    <!-- NÚT GỬI -->
+    <button type="submit" class="secret-submit">
+        SEND YOUR CONFESSION ♡
+    </button>
 
-            <!-- CHỐNG BOT -->
-            <input
-                type="checkbox"
-                name="botcheck"
-                style="display: none;"
-            >
-
-            <!-- TÊN NGƯỜI GỬI -->
-            <div class="form-group">
-                <label for="sender">
-                    YOUR NAME / ANONYMOUS ♡
-                </label>
-
-                <input
-                    type="text"
-                    id="sender"
-                    name="Tên người gửi"
-                    placeholder="Tên hoặc biệt danh của bạn..."
-                    maxlength="50"
-                >
-            </div>
-
-            <!-- NỘI DUNG TIN NHẮN -->
-            <div class="form-group">
-                <label for="message">
-                    YOUR SECRET MESSAGE 💌
-                </label>
-
-                <textarea
-                    id="message"
-                    name="Lời nhắn"
-                    placeholder="Viết những điều bạn muốn gửi..."
-                    required
-                    maxlength="2000"
-                ></textarea>
-            </div>
-
-            <!-- NÚT GỬI -->
-            <button type="submit" class="secret-submit">
-                SEND YOUR CONFESSION ♡
-            </button>
-
-        </form>
-
+</form>
+```
         <!-- CHÂN FORM -->
         <div class="secret-footer">
             🔒 YOUR MESSAGE WILL BE SENT PRIVATELY
