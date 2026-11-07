@@ -979,3 +979,54 @@ footer p:first-child {
         padding: 22px 17px;
     }
 }
+/* ==============================
+   SECRET ROOM - FORM STATUS
+================================ */
+
+
+/* THÔNG BÁO CHUNG */
+
+.form-status {
+display: none;
+padding: 14px 16px;
+margin-bottom: 18px;
+border-radius: 13px;
+font-size: 12px;
+font-weight: 700;
+line-height: 1.8;
+text-align: center;
+}
+
+/* ĐANG GỬI */
+
+.form-status.sending {
+display: block;
+background: #f5eaff;
+color: #9873b4;
+}
+
+/* GỬI THÀNH CÔNG */
+
+.form-status.success {
+display: block;
+background: #e9f8ef;
+color: #478c68;
+border: 1px solid #c8ead5;
+}
+
+/* GỬI THẤT BẠI */
+
+.form-status.error {
+display: block;
+background: #fff0f1;
+color: #c45e75;
+border: 1px solid #f4cbd3;
+}
+
+/* NÚT GỬI */
+
+.secret-submit:disabled {
+opacity: 0.7;
+cursor: not-allowed;
+transform: none;
+}
