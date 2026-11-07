@@ -580,6 +580,192 @@ section {
     padding-bottom: 8px;
 }
 
+/* SECRET ROOM */
+
+.secret-room {
+    width: 90%;
+    max-width: 1050px;
+    margin: 90px auto;
+    padding: 65px 30px;
+    border-radius: 35px;
+    background: linear-gradient(
+        135deg,
+        #f9d9e9,
+        #eee0fa,
+        #fce8f1
+    );
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 12px 35px #d875a120;
+}
+
+.secret-room::before {
+    content: "♡";
+    position: absolute;
+    top: -45px;
+    left: -10px;
+    font-size: 180px;
+    color: #ffffff55;
+    transform: rotate(-20deg);
+}
+
+.secret-room::after {
+    content: "✧";
+    position: absolute;
+    bottom: -60px;
+    right: 15px;
+    font-size: 200px;
+    color: #ffffff55;
+}
+
+.secret-decoration {
+    font-size: 35px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.secret-content {
+    max-width: 650px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.secret-subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: #bd7299;
+}
+
+.secret-content h2 {
+    font-size: 35px;
+    color: #a65f88;
+    margin: 18px 0;
+    line-height: 1.5;
+}
+
+.secret-content h2 span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 23px;
+    color: #9873b4;
+}
+
+.secret-description {
+    font-size: 13px;
+    line-height: 2;
+    color: #896a80;
+    margin: 20px auto;
+    max-width: 520px;
+}
+
+.secret-divider {
+    color: #bd80a1;
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.secret-form {
+    background: rgba(255,255,255,.85);
+    padding: 35px;
+    border-radius: 25px;
+    text-align: left;
+    border: 1px solid #ffffff;
+    box-shadow: 0 8px 25px #b77c9d15;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    color: #a65f88;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #f1d5e3;
+    border-radius: 13px;
+    outline: none;
+    background: #fff8fb;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    color: #78566d;
+    transition: .3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d875a1;
+    box-shadow: 0 0 0 3px #f4a9c730;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+    line-height: 1.8;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #c4a5b6;
+}
+
+.secret-submit {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(120deg,#df80a9,#a77bc2);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 7px 20px #bd80a140;
+    transition: .3s;
+}
+
+.secret-submit:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px #bd80a155;
+    background: linear-gradient(120deg,#cb6997,#9566b5);
+}
+
+.secret-footer {
+    margin-top: 22px;
+    color: #a77c9b;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.secret-stamp {
+    margin-top: 25px;
+    color: #bd80a1;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* CHỐNG BOT */
+
+.honey-field {
+    display: none !important;
+}
+
 /* ENDING */
 
 .ending {
@@ -637,6 +823,7 @@ footer p:first-child {
 /* RESPONSIVE */
 
 @media (max-width: 1000px) {
+
     .header {
         flex-direction: column;
     }
@@ -665,6 +852,7 @@ footer p:first-child {
 }
 
 @media (max-width: 650px) {
+
     .header nav {
         gap: 12px;
     }
@@ -718,5 +906,25 @@ footer p:first-child {
 
     .ending h2 {
         font-size: 22px;
+    }
+
+    .secret-room {
+        padding: 45px 18px;
+    }
+
+    .secret-content h2 {
+        font-size: 27px;
+    }
+
+    .secret-content h2 span {
+        font-size: 18px;
+    }
+
+    .secret-form {
+        padding: 22px 17px;
+    }
+
+    .secret-description {
+        font-size: 12px;
     }
 }
