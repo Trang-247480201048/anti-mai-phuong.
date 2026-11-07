@@ -408,8 +408,6 @@
 
     </div>
 </section>
-
-<
 <!-- SECRET ROOM -->
 <section class="secret-room" id="secret-room">
 
@@ -438,34 +436,39 @@
             ✧ ─────── ♡ ─────── ✧
         </div>
 
-        <!-- FORM GỬI EMAIL -->
+        <!-- FORM GỬI EMAIL QUA WEB3FORMS -->
         <form
-            action="https://formsubmit.co/nghiemhao131278@gmail.com"
+            action="https://api.web3forms.com/submit"
             method="POST"
             class="secret-form"
         >
 
-            <!-- Tiêu đề email -->
+            <!-- ACCESS KEY -->
             <input
                 type="hidden"
-                name="_subject"
+                name="access_key"
+                value="76d6800d-4643-4cb5-8fd6-4f3c785ab025"
+            >
+
+            <!-- TIÊU ĐỀ EMAIL -->
+            <input
+                type="hidden"
+                name="subject"
                 value="💌 Lời nhắn mới từ Mai Phương's Secret Room"
             >
 
-            <!-- Định dạng email -->
+            <!-- TÊN WEBSITE -->
             <input
                 type="hidden"
-                name="_template"
-                value="table"
+                name="from_name"
+                value="Mai Phuong Secret Room"
             >
 
-            <!-- Chống bot -->
+            <!-- CHỐNG BOT -->
             <input
-                type="text"
-                name="_honey"
-                class="honey-field"
-                tabindex="-1"
-                autocomplete="off"
+                type="checkbox"
+                name="botcheck"
+                style="display: none;"
             >
 
             <!-- TÊN NGƯỜI GỬI -->
@@ -517,7 +520,6 @@
     </div>
 
 </section>
-
 
 <!-- KẾT -->
 <section class="ending">
